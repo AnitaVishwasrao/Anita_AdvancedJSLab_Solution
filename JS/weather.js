@@ -34,6 +34,10 @@ function getWeatherInfomation(cityName) {
     });
 }
 
+function cleanTemperature(temperature) {
+  return Math.round(temperature * 100) / 100;
+}
+
 function displayWeatherInfo(weatherInfo) {
   const location = document.getElementById("location");
   const currTimestamp = document.getElementById("curr_timestamp");
@@ -53,11 +57,13 @@ function displayWeatherInfo(weatherInfo) {
     weekday: "long",
   });
 
-  temperature.innerHTML = `${weatherInfo.main.temp} ${unitString}`;
+  temperature.innerHTML = `${cleanTemperature(
+    weatherInfo.main.temp
+  )} ${unitString}`;
   weather.innerText = weatherInfo.weather[0].main;
-  highLowTemp.innerHTML = `${weatherInfo.main.temp_max}
+  highLowTemp.innerHTML = `${cleanTemperature(weatherInfo.main.temp_max)}
      ${unitString} / 
-    ${weatherInfo.main.temp_min}
+    ${cleanTemperature(weatherInfo.main.temp_min)}
      ${unitString}`;
 }
 
