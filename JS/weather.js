@@ -4,7 +4,7 @@ const API = {
   baseUrl: "https://api.openweathermap.org/data/2.5/weather?",
   defaultParams: "q=#CITY#&units=#METRIC#&appid=#API_KEY#", //Placeholders (#Placeholder#) will be replaced with actual values
   unit: "metric", // this returns temperature in celsius
-  token: "",
+  token: "", //add token here
   tempUnit: "&deg;C",
 };
 
