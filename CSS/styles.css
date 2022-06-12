@@ -1,0 +1,73 @@
+html {
+  margin: 0;
+  padding: 0;
+  background: url("./../Images/background_image.png") center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  margin: 5% auto;
+  text-align: center;
+}
+
+input[type="text"] {
+  height: 40px;
+  width: 300px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid gold;
+  border-radius: 50px 20px;
+  text-align: center;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.margin-top-4per {
+  margin-top: 4%;
+}
+
+#location-time div {
+  color: white;
+}
+
+#location {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+#curr_timestamp {
+  margin-top: 1%;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#weather-info > div {
+  color: white;
+}
+
+#temperature {
+  font-size: 55px;
+  font-weight: bolder;
+}
+
+#weather {
+  margin-top: 2%;
+  font-size: 40px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+#high-low-temp {
+  font-size: 25px;
+  margin-top: 1%;
+}

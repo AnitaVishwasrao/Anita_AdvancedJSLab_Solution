@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information Application</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="city" placeholder="Enter a location...." autocomplete="on" onfocus="clear()"
+            title="Enter city name and press Enter key to get the weather information">
+        <div id="location-time" class="margin-top-4per">
+            <div id="location"></div>
+            <div id="curr_timestamp"></div>
+        </div>
+        <div id="weather-info" class="margin-top-4per">
+            <div id="temperature"></div>
+            <div id="weather"></div>
+            <div id="high-low-temp"></div>
+        </div>
+    </div>
+
+    <script type=" text/javascript" src="./JS/weather.js"></script>
+</body>
+
+</html>
